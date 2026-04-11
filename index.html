@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Iklan Digital Profesional | Meta, TikTok, Google Ads</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0052CC',
+                        secondary: '#6366F1',
+                        darkBg: '#0F172A',
+                        darkCard: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Animated Gradient Background */
+        .bg-animated-gradient {
+            background: linear-gradient(135deg, #0052CC 0%, #6366F1 50%, #0052CC 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 6s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #0052CC 0%, #6366F1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .dark .text-gradient {
+            background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Smooth Transitions */
+        .transition-theme {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Prevent scrolling when mobile menu is open */
+        body.menu-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-darkBg dark:text-gray-100 transition-theme overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-white/80 dark:bg-darkBg/80 border-b border-gray-200 dark:border-gray-800" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#beranda" class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-rocket text-primary dark:text-blue-400 text-xl"></i>
+                    <span class="font-bold text-xl tracking-tight">Aden Digital Strategist</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">Beranda</a>
+                    <a href="#solusi" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">Solusi</a>
+                    <a href="#platform" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">Platform</a>
+                    <a href="#proses" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">Proses</a>
+                    <a href="#pricing" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">Harga</a>
+                    <a href="#faq" class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors">FAQ</a>
+                </div>
+
+                <div class="flex items-center gap-2 md:gap-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none" aria-label="Toggle Dark Mode">
+                        <i id="theme-toggle-dark-icon" class="fa-solid fa-moon text-gray-500 dark:text-gray-400 hidden"></i>
+                        <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-yellow-500 hidden"></i>
+                    </button>
+                    
+                    <a href="https://wa.me/6285380678844?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20jasa%20iklan%20digital." target="_blank" class="hidden md:inline-flex items-center justify-center px-5 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-animated-gradient hover:opacity-90 transition-opacity shadow-lg">
+                        Konsultasi Gratis
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-white dark:bg-darkBg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-4 border-b border-gray-100 dark:border-gray-800">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-rocket text-primary dark:text-blue-400 text-xl"></i>
+                    <span class="font-bold text-xl tracking-tight">Aden Digital Strategist</span>
+                </div>
+                <button id="close-menu-btn" class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col py-6 px-4 space-y-4 overflow-y-auto">
+                <a href="#beranda" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Beranda</a>
+                <a href="#solusi" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Solusi</a>
+                <a href="#platform" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Platform</a>
+                <a href="#proses" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Proses</a>
+                <a href="#pricing" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">Harga</a>
+                <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-lg font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">FAQ</a>
+                
+                <div class="pt-6 mt-4 border-t border-gray-100 dark:border-gray-800">
+                    <a href="https://wa.me/6285380678844?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20jasa%20iklan%20digital." target="_blank" class="flex items-center justify-center w-full px-5 py-4 text-base font-bold rounded-xl text-white bg-animated-gradient shadow-lg">
+                        Konsultasi Gratis Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section id="beranda" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-animated-gradient text-white">
+        <!-- Decorative blobs -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-blue-300 blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm text-sm font-semibold mb-6 border border-white/30">
+                🚀 #1 Digital Advertising Agency
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Scale Bisnis Anda Dengan Iklan Digital yang Terbukti Menghasilkan
+            </h1>
+            <p class="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-blue-50 mb-10 leading-relaxed">
+                Kami membantu bisnis mendapatkan lebih banyak leads, penjualan, dan pelanggan melalui optimasi iklan Meta Ads, TikTok Ads, dan Google Ads dengan strategi yang terukur.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10 text-left md:text-center">
+                <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-300"></i>
+                    <span class="text-sm font-medium">Target market lebih tepat</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-300"></i>
+                    <span class="text-sm font-medium">Budget iklan lebih efisien</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20">
+                    <i class="fa-solid fa-check-circle text-green-300"></i>
+                    <span class="text-sm font-medium">Fokus menghasilkan penjualan</span>
+                </div>
+            </div>
+
+            <a href="https://wa.me/6285380678844?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20jasa%20iklan%20digital." target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-primary bg-white hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+                👉 Konsultasi Gratis Sekarang
+            </a>
+        </div>
+        
+        <!-- Bottom curve -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,123.82,198.7,108.36,242.47,98.3,283.68,79.17,321.39,56.44Z" class="fill-gray-50 dark:fill-darkBg transition-theme"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 2. MASALAH SECTION -->
+    <section id="masalah" class="py-20 bg-gray-50 dark:bg-darkBg transition-theme scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Apakah Anda pernah <span class="text-gradient">mengalami hal ini?</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Banyak pebisnis membuang uang karena strategi iklan yang salah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto reveal">
+                <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Sudah pasang iklan tapi tidak ada penjualan</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Traffic banyak tapi conversion rate sangat rendah.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Budget iklan cepat habis tapi hasil sedikit</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Cost per Result (CPR) terlalu mahal dan tidak profitable.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Tidak paham cara target audience yang tepat</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Iklan tayang ke orang yang tidak butuh produk Anda.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Tidak tahu cara membaca data iklan</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Bingung metrik apa yang harus dioptimasi untuk scale up.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center reveal">
+                <div class="inline-block p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/50">
+                    <p class="text-gray-800 dark:text-gray-200 font-medium">
+                        💡 Jika iya, berarti iklan Anda belum dioptimasi dengan strategi yang benar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOLUSI SECTION -->
+    <section id="solusi" class="py-20 bg-white dark:bg-[#151f32] transition-theme border-y border-gray-100 dark:border-gray-800 scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Solusi Yang <span class="text-gradient">Saya Tawarkan</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Saya membantu bisnis Anda dengan strategi digital advertising yang terstruktur mulai dari riset hingga optimasi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-3xl bg-gray-50 dark:bg-darkCard hover:bg-white dark:hover:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-animated-gradient flex items-center justify-center mb-6 text-white shadow-lg transform group-hover:-rotate-6 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Riset Target Market</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Menentukan audience yang benar-benar potensial membeli produk atau jasa Anda.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-3xl bg-gray-50 dark:bg-darkCard hover:bg-white dark:hover:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-animated-gradient flex items-center justify-center mb-6 text-white shadow-lg transform group-hover:rotate-6 transition-transform">
+                        <i class="fa-solid fa-chess-knight text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Riset Competitor & Creative</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Menganalisa iklan kompetitor agar strategi penawaran dan visual lebih kuat.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-3xl bg-gray-50 dark:bg-darkCard hover:bg-white dark:hover:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-animated-gradient flex items-center justify-center mb-6 text-white shadow-lg transform group-hover:-rotate-6 transition-transform">
+                        <i class="fa-solid fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Setup Campaign Profesional</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Setting campaign di dashboard dengan struktur yang benar dan tracking yang akurat.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="group p-8 rounded-3xl bg-gray-50 dark:bg-darkCard hover:bg-white dark:hover:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-animated-gradient flex items-center justify-center mb-6 text-white shadow-lg transform group-hover:rotate-6 transition-transform">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Optimasi & Scaling Iklan</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Meningkatkan performa iklan supaya lebih profitable dan memperbesar skala bisnis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PLATFORM SECTION -->
+    <section id="platform" class="py-20 bg-gray-50 dark:bg-darkBg transition-theme scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Platform Iklan Yang <span class="text-gradient">Saya Handle</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Pilih platform yang paling sesuai dengan karakteristik bisnis Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                <!-- Meta Ads -->
+                <div class="bg-white dark:bg-darkCard rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full -z-0"></div>
+                    <div class="relative z-10">
+                        <i class="fa-brands fa-meta text-5xl text-[#0668E1] mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-2">Meta Ads</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">Meta Ads Manager</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">Iklan di Facebook & Instagram untuk mendapatkan leads dan penjualan secara masif.</p>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl">
+                            <p class="font-semibold text-sm mb-2 text-blue-800 dark:text-blue-300">Cocok untuk:</p>
+                            <ul class="text-sm text-gray-700 dark:text-gray-400 space-y-2">
+                                <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Online shop</li>
+                                <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Klinik / jasa</li>
+                                <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Personal branding</li>
+                                <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>UMKM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok Ads -->
+                <div class="bg-white dark:bg-darkCard rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gray-500/10 rounded-bl-full -z-0"></div>
+                    <div class="relative z-10">
+                        <i class="fa-brands fa-tiktok text-5xl text-black dark:text-white mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-2">TikTok Ads</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">TikTok Ads Manager</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">Platform yang sedang booming untuk jualan viral dan branding cepat ke audiens luas.</p>
+                        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl">
+                            <p class="font-semibold text-sm mb-2 text-gray-800 dark:text-gray-300">Cocok untuk:</p>
+                            <ul class="text-sm text-gray-700 dark:text-gray-400 space-y-2">
+                                <li><i class="fa-solid fa-check text-gray-500 mr-2"></i>Produk trending</li>
+                                <li><i class="fa-solid fa-check text-gray-500 mr-2"></i>Brand awareness</li>
+                                <li><i class="fa-solid fa-check text-gray-500 mr-2"></i>E-commerce</li>
+                                <li><i class="fa-solid fa-check text-gray-500 mr-2"></i>Gen Z & Millennial Market</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Ads -->
+                <div class="bg-white dark:bg-darkCard rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-bl-full -z-0"></div>
+                    <div class="relative z-10">
+                        <i class="fa-brands fa-google text-5xl text-[#EA4335] mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-2">Google Ads</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">Google Ads Platform</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">Menjangkau orang yang sedang secara aktif mencari produk atau jasa Anda di mesin pencari.</p>
+                        <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-xl">
+                            <p class="font-semibold text-sm mb-2 text-red-800 dark:text-red-300">Cocok untuk:</p>
+                            <ul class="text-sm text-gray-700 dark:text-gray-400 space-y-2">
+                                <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Jasa Profesional</li>
+                                <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Properti & Real Estate</li>
+                                <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Klinik & Kesehatan</li>
+                                <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Produk high-demand</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROSES KERJA -->
+    <section id="proses" class="py-20 bg-white dark:bg-[#151f32] transition-theme border-y border-gray-100 dark:border-gray-800 scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Proses <span class="text-gradient">Kerja Saya</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Langkah terstruktur untuk memastikan kampanye iklan Anda berhasil.</p>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto reveal">
+                <!-- Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white dark:bg-darkCard border-4 border-primary flex items-center justify-center text-xl font-bold text-primary shadow-lg mb-4">1</div>
+                        <h4 class="font-semibold mb-2">Konsultasi</h4>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Diskusi target & goal bisnis Anda.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white dark:bg-darkCard border-4 border-primary flex items-center justify-center text-xl font-bold text-primary shadow-lg mb-4">2</div>
+                        <h4 class="font-semibold mb-2">Riset</h4>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Analisa market & kompetitor.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white dark:bg-darkCard border-4 border-primary flex items-center justify-center text-xl font-bold text-primary shadow-lg mb-4">3</div>
+                        <h4 class="font-semibold mb-2">Setup</h4>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Pembuatan campaign iklan.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white dark:bg-darkCard border-4 border-primary flex items-center justify-center text-xl font-bold text-primary shadow-lg mb-4">4</div>
+                        <h4 class="font-semibold mb-2">Monitoring</h4>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Pantau performa harian.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white dark:bg-darkCard border-4 border-primary flex items-center justify-center text-xl font-bold text-primary shadow-lg mb-4">5</div>
+                        <h4 class="font-semibold mb-2">Optimasi</h4>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Scaling untuk profit maksimal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5.5 STRATEGI KONTEN IKLAN (BONUS) -->
+    <section id="strategi-konten" class="py-20 bg-gray-50 dark:bg-darkBg transition-theme scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Strategi Konten Iklan <span class="text-gradient">(Bonus Dari Saya)</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Selain membantu setup dan optimasi iklan, saya juga akan memberikan saran konten yang berpotensi menarik perhatian audience dan meningkatkan konversi.<br>
+                    Karena dalam digital advertising, iklan yang bagus bukan hanya dari setting campaign, tapi juga dari konten yang tepat.
+                </p>
+            </div>
+
+            <div class="mb-16 reveal">
+                <h3 class="text-2xl font-bold mb-8 text-center text-gray-900 dark:text-white">Yang akan saya bantu:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition-transform">
+                        <div class="text-3xl mb-4">🎥</div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Ide Konten Iklan</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Memberikan rekomendasi konsep konten yang berpotensi perform di iklan.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition-transform">
+                        <div class="text-3xl mb-4">🧠</div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Hook / Opening Video</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Menyarankan opening video yang kuat supaya orang berhenti scroll.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition-transform">
+                        <div class="text-3xl mb-4">✍️</div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Copywriting Iklan</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Memberikan contoh teks iklan yang menarik perhatian calon pelanggan.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition-transform">
+                        <div class="text-3xl mb-4">📊</div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Analisa Konten Kompetitor</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Melihat konten yang sedang berhasil di market Anda.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition-transform">
+                        <div class="text-3xl mb-4">🎯</div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Strategi Creative Testing</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Menguji beberapa konsep konten untuk menemukan yang paling profitable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-[#151f32] rounded-3xl p-8 md:p-12 border border-gray-100 dark:border-gray-800 shadow-sm reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Kenapa Konten Iklan Sangat Penting?</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Banyak bisnis gagal di iklan bukan karena settingnya salah, tetapi karena:</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300">Konten tidak menarik perhatian</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300">Opening video tidak kuat</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300">Tidak ada hook yang membuat orang berhenti scroll</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Dengan strategi konten yang tepat, iklan bisa:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300 font-medium">Meningkatkan CTR</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300 font-medium">Menurunkan biaya iklan</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1"></i> <span class="text-gray-700 dark:text-gray-300 font-medium">Meningkatkan konversi</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-10 p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/50 text-center">
+                    <p class="text-sm md:text-base text-gray-800 dark:text-gray-200">
+                        <strong class="text-primary dark:text-blue-400">CATATAN:</strong> Saya fokus pada strategi dan optimasi iklan, namun saya juga akan memberikan rekomendasi konten yang bisa Anda buat untuk kebutuhan iklan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PAKET JASA -->
+    <section id="pricing" class="py-20 bg-white dark:bg-[#151f32] transition-theme border-y border-gray-100 dark:border-gray-800 scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Paket <span class="text-gradient">Jasa Iklan Digital</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Kami menyediakan jasa setup dan optimasi iklan untuk beberapa platform digital sesuai dengan kebutuhan bisnis Anda.</p>
+            </div>
+
+            <!-- Meta Ads -->
+            <div class="mb-20">
+                <div class="text-center mb-10 reveal">
+                    <i class="fa-brands fa-meta text-4xl text-[#0668E1] mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Jasa Setup Iklan Facebook, Instagram dan Threads</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">Melalui Meta Ads Manager. Sangat efektif untuk menjangkau target market yang spesifik dan meningkatkan penjualan melalui Facebook, Instagram dan Threads.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center reveal">
+                    <!-- Trial -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Meta Ads – Trial</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 3 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp299<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Setup campaign iklan</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Riset target audience</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Struktur campaign dasar</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Optimasi setup</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Meta%20Ads%20Trial%20Rp299.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-[#0668E1] text-[#0668E1] font-semibold hover:bg-[#0668E1] hover:text-white transition-colors">Pilih Paket</a>
+                    </div>
+                    <!-- Growth -->
+                    <div class="bg-gradient-to-br from-[#0668E1] to-blue-400 rounded-3xl p-1 shadow-2xl transform md:-translate-y-4 relative">
+                        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4">
+                            <span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">Best Seller</span>
+                        </div>
+                        <div class="bg-white dark:bg-darkCard rounded-[23px] p-8 h-full">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Meta Ads – Growth</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 14 hari</p>
+                            <div class="mb-6">
+                                <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#0668E1] to-blue-400">Rp699<span class="text-lg">.000</span></span>
+                            </div>
+                            <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Setup campaign profesional</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Riset audience & competitor</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Struktur campaign optimal</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Monitoring & optimasi iklan</li>
+                            </ul>
+                            <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Meta%20Ads%20Growth%20Rp699.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl bg-[#0668E1] text-white font-semibold hover:bg-blue-700 transition-colors shadow-md">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <!-- Scale -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Meta Ads – Scale</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 30 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp1.500<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Setup campaign lengkap</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Riset audience mendalam</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Strategi creative testing</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#0668E1] mr-3"></i> Optimasi dan scaling campaign</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Meta%20Ads%20Scale%20Rp1.500.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-[#0668E1] text-[#0668E1] font-semibold hover:bg-[#0668E1] hover:text-white transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TikTok Ads -->
+            <div class="mb-20">
+                <div class="text-center mb-10 reveal">
+                    <i class="fa-brands fa-tiktok text-4xl text-black dark:text-white mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Jasa Setup TikTok Ads</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">Menggunakan platform TikTok Ads Manager. Cocok untuk bisnis yang ingin memanfaatkan konten video dan trend viral untuk meningkatkan penjualan.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center reveal">
+                    <!-- Trial -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">TikTok Ads – Trial</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 3 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp299<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Setup campaign iklan</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Riset audience</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Struktur campaign dasar</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Optimasi dasar</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20TikTok%20Ads%20Trial%20Rp299.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-black dark:border-white text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">Pilih Paket</a>
+                    </div>
+                    <!-- Growth -->
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-500 rounded-3xl p-1 shadow-2xl transform md:-translate-y-4 relative">
+                        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4">
+                            <span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">Best Seller</span>
+                        </div>
+                        <div class="bg-white dark:bg-darkCard rounded-[23px] p-8 h-full">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">TikTok Ads – Growth</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 14 hari</p>
+                            <div class="mb-6">
+                                <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-500 dark:from-gray-200 dark:to-white">Rp699<span class="text-lg">.000</span></span>
+                            </div>
+                            <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Setup campaign profesional</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Riset audience & kompetitor</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Monitoring performa iklan</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Optimasi campaign</li>
+                            </ul>
+                            <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20TikTok%20Ads%20Growth%20Rp699.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl bg-black dark:bg-white text-white dark:text-black font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-md">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <!-- Scale -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">TikTok Ads – Scale</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 30 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp1.500<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Setup campaign lengkap</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Strategi creative testing</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Optimasi dan scaling iklan</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-black dark:text-white mr-3"></i> Analisa performa campaign</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20TikTok%20Ads%20Scale%20Rp1.500.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-black dark:border-white text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Ads -->
+            <div>
+                <div class="text-center mb-10 reveal">
+                    <i class="fa-brands fa-google text-4xl text-[#EA4335] mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Jasa Setup Google Ads</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">Melalui platform Google Ads. Sangat cocok untuk menjangkau orang yang sedang mencari produk atau jasa Anda di Google.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center reveal">
+                    <!-- Trial -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Google Ads – Trial</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 3 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp399<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Setup campaign search ads</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Riset keyword</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Struktur campaign dasar</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Optimasi dasar</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Google%20Ads%20Trial%20Rp399.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-[#EA4335] text-[#EA4335] font-semibold hover:bg-[#EA4335] hover:text-white transition-colors">Pilih Paket</a>
+                    </div>
+                    <!-- Growth -->
+                    <div class="bg-gradient-to-br from-[#EA4335] to-red-400 rounded-3xl p-1 shadow-2xl transform md:-translate-y-4 relative">
+                        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4">
+                            <span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">Best Seller</span>
+                        </div>
+                        <div class="bg-white dark:bg-darkCard rounded-[23px] p-8 h-full">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Google Ads – Growth</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 14 hari</p>
+                            <div class="mb-6">
+                                <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#EA4335] to-red-400">Rp899<span class="text-lg">.000</span></span>
+                            </div>
+                            <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Setup campaign profesional</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Riset keyword mendalam</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Struktur campaign optimal</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Monitoring dan optimasi</li>
+                            </ul>
+                            <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Google%20Ads%20Growth%20Rp899.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl bg-[#EA4335] text-white font-semibold hover:bg-red-700 transition-colors shadow-md">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <!-- Scale -->
+                    <div class="bg-gray-50 dark:bg-darkCard rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Google Ads – Scale</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Durasi 30 hari</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp1.800<span class="text-lg">.000</span></span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Setup campaign lengkap</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Strategi keyword & bidding</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Optimasi dan scaling campaign</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-[#EA4335] mr-3"></i> Analisa performa iklan</li>
+                        </ul>
+                        <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Google%20Ads%20Scale%20Rp1.800.000." target="_blank" class="block w-full text-center py-3 px-6 rounded-xl border-2 border-[#EA4335] text-[#EA4335] font-semibold hover:bg-[#EA4335] hover:text-white transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket Bundling -->
+            <div class="mt-20">
+                <div class="text-center mb-10 reveal">
+                    <div class="flex justify-center gap-4 mb-4">
+                        <i class="fa-brands fa-meta text-4xl text-[#0668E1]"></i>
+                        <i class="fa-brands fa-tiktok text-4xl text-black dark:text-white"></i>
+                        <i class="fa-brands fa-google text-4xl text-[#EA4335]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Paket Bundling Lengkap</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">Meta Ads, TikTok Ads, dan Google Ads</p>
+                </div>
+                <div class="max-w-3xl mx-auto reveal">
+                    <div class="bg-gradient-to-br from-primary to-purple-600 rounded-3xl p-1 shadow-2xl relative">
+                        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4">
+                            <span class="bg-yellow-400 text-yellow-900 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wide shadow-md">All In One</span>
+                        </div>
+                        <div class="bg-white dark:bg-darkCard rounded-[23px] p-8 md:p-10 h-full flex flex-col md:flex-row items-center gap-8">
+                            <div class="flex-1">
+                                <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Paket Bundling Lengkap Meta ads, Tiktok ads dan google ads</h4>
+                                <div class="mb-6">
+                                    <span class="text-4xl font-extrabold text-gray-900 dark:text-white">Rp3.500<span class="text-lg">.000</span></span>
+                                </div>
+                                <ul class="space-y-4 mb-8 text-base text-gray-600 dark:text-gray-300">
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> setup campaign lengkap</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> riset audience mendalam</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> strategi creative testing (ide konten)</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> optimasi dan scaling campaign</li>
+                                    <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> durasi 1 bulan</li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-auto text-center">
+                                <a href="https://wa.me/6285380678844?text=Halo,%20saya%20tertarik%20mengambil%20Paket%20Bundling%20Lengkap%20Meta,%20TikTok,%20dan%20Google%20Ads." target="_blank" class="block w-full md:w-auto text-center py-4 px-8 rounded-xl bg-animated-gradient text-white font-bold hover:opacity-90 transition-opacity shadow-lg whitespace-nowrap">Tanya Harga Spesial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center reveal">
+                <div class="inline-flex flex-col items-start gap-2 text-left mx-auto">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
+                        <i class="fa-solid fa-thumbtack text-red-500"></i>
+                        Harga di atas hanya jasa setting iklan, belum termasuk budget/saldo iklan.
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
+                        <i class="fa-solid fa-info-circle text-blue-500"></i>
+                        Untuk yang 30 hari atau bulanan bisa di nego sesuai kesepakatan bersama.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6.5 TEKNIS DAN KONTRAK KERJA -->
+    <section id="terms" class="py-20 bg-gray-50 dark:bg-darkBg transition-theme border-y border-gray-100 dark:border-gray-800 scroll-mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Teknis Penanganan & <span class="text-gradient">Kontrak Kerja</span></h2>
+            
+            <div class="bg-white dark:bg-darkCard p-8 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-800 mb-8 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
+                    <i class="fa-solid fa-gears text-primary dark:text-blue-400"></i> Teknis Penanganan Jasa Iklan
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Setelah fixed kontrak kerja, berikut teknis kerja sama selanjutnya:</p>
+                <ol class="list-decimal pl-5 space-y-3 text-sm md:text-base text-gray-700 dark:text-gray-300">
+                    <li class="pl-2">Membuat grup WhatsApp khusus antara saya dan klien untuk komunikasi dan koordinasi iklan.</li>
+                    <li class="pl-2">Klien memberikan akses akun iklan sesuai platform yang digunakan seperti:
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600 dark:text-gray-400">
+                            <li>Meta Ads Manager</li>
+                            <li>TikTok Ads Manager</li>
+                            <li>Google Ads</li>
+                        </ul>
+                    </li>
+                    <li class="pl-2">Proses setup dan pembuatan campaign iklan sesuai dengan paket jasa yang dipilih.</li>
+                    <li class="pl-2">Melakukan pemantauan dan optimasi iklan secara berkala untuk meningkatkan performa campaign.</li>
+                    <li class="pl-2">Memberikan laporan performa iklan secara berkala kepada klien selama masa pengelolaan iklan.</li>
+                    <li class="pl-2">Jika diperlukan, saya juga akan memberikan saran strategi konten iklan agar performa campaign lebih maksimal.</li>
+                </ol>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard p-8 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-3">
+                    <i class="fa-solid fa-file-contract text-primary dark:text-blue-400"></i> Kontrak Kerja
+                </h3>
+                <ol class="list-decimal pl-5 space-y-3 text-sm md:text-base text-gray-700 dark:text-gray-300">
+                    <li class="pl-2">Biaya jasa dibayarkan di awal sebelum proses pengerjaan dimulai.</li>
+                    <li class="pl-2">Biaya jasa merupakan upah kerja untuk pengelolaan dan optimasi iklan, bukan termasuk saldo atau budget iklan.</li>
+                    <li class="pl-2">Budget iklan ditentukan oleh klien dan dibayarkan langsung ke platform iklan.</li>
+                    <li class="pl-2">Selama masa kerja sama, saya akan membantu mengelola, memantau, dan mengoptimalkan iklan agar performanya lebih baik.</li>
+                    <li class="pl-2">Klien dapat mendiskusikan strategi iklan, target market, dan budget iklan selama masa kerja sama berlangsung.</li>
+                    <li class="pl-2">Semua data bisnis dan akun klien akan dijaga kerahasiaannya dan hanya digunakan untuk kebutuhan pengelolaan iklan.</li>
+                    <li class="pl-2">Setelah masa kerja sama selesai, klien dapat melakukan perpanjangan layanan jika ingin melanjutkan pengelolaan iklan.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TESTIMONI -->
+    <section id="testimoni" class="py-20 bg-white dark:bg-[#151f32] transition-theme scroll-mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa kata <span class="text-gradient">klien kami?</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Bukti nyata dari strategi yang kami jalankan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto reveal">
+                <!-- Testi 1 -->
+                <div class="bg-gray-50 dark:bg-darkCard p-8 rounded-3xl border border-gray-100 dark:border-gray-700 relative shadow-sm">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-200 dark:text-gray-800 absolute top-6 left-6"></i>
+                    <div class="relative z-10 pt-4">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-lg italic mb-6">"Iklan saya sebelumnya boncos, setelah dioptimasi oleh tim ini penjualan naik 3x lipat. Sangat recommended!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold">A</div>
+                            <div>
+                                <p class="font-bold text-sm">Owner Online Shop</p>
+                                <p class="text-xs text-gray-500">Fashion Wanita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 2 -->
+                <div class="bg-gray-50 dark:bg-darkCard p-8 rounded-3xl border border-gray-100 dark:border-gray-700 relative shadow-sm">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-200 dark:text-gray-800 absolute top-6 left-6"></i>
+                    <div class="relative z-10 pt-4">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-lg italic mb-6">"Target market jadi lebih tepat sasaran dan leads dari WhatsApp masuk setiap hari. Layanannya sangat profesional."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white font-bold">B</div>
+                            <div>
+                                <p class="font-bold text-sm">Pemilik Jasa</p>
+                                <p class="text-xs text-gray-500">Klinik Kecantikan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 3 -->
+                <div class="bg-gray-50 dark:bg-darkCard p-8 rounded-3xl border border-gray-100 dark:border-gray-700 relative shadow-sm">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-200 dark:text-gray-800 absolute top-6 left-6"></i>
+                    <div class="relative z-10 pt-4">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-lg italic mb-6">"Sebelumnya penjualan toko bangunan saya sepi dan iklan kurang maksimal. Setelah dibantu tim ini, orderan meningkat drastis sampai 2–3x lipat. Sekarang tiap hari ada saja yang tanya via WhatsApp. Sangat recommended!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white font-bold">T</div>
+                            <div>
+                                <p class="font-bold text-sm">Pemilik Usaha</p>
+                                <p class="text-xs text-gray-500">Toko Bangunan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 4 -->
+                <div class="bg-gray-50 dark:bg-darkCard p-8 rounded-3xl border border-gray-100 dark:border-gray-700 relative shadow-sm">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-200 dark:text-gray-800 absolute top-6 left-6"></i>
+                    <div class="relative z-10 pt-4">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 dark:text-gray-300 text-lg italic mb-6">"Awalnya susah dapat pelanggan untuk jasa pintu besi dan kanopi. Setelah pakai jasa iklan dari tim ini, target market jadi lebih tepat dan leads masuk hampir setiap hari. Closing juga jadi lebih mudah. Pelayanannya profesional"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center text-white font-bold">B</div>
+                            <div>
+                                <p class="font-bold text-sm">Pemilik Jasa</p>
+                                <p class="text-xs text-gray-500">Bengkel Pintu Besi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section id="faq" class="py-20 bg-gray-50 dark:bg-darkBg transition-theme border-y border-gray-100 dark:border-gray-800 scroll-mt-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl font-bold mb-4">Pertanyaan yang Sering <span class="text-gradient">Ditanyakan</span></h2>
+            </div>
+
+            <div class="space-y-4 reveal">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full flex items-center justify-between gap-4 p-6 text-left focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Apakah budget iklan sudah termasuk dalam paket?</h3>
+                        <span class="faq-icon shrink-0 rounded-full bg-gray-50 dark:bg-gray-800 p-2 sm:p-3 text-gray-900 dark:text-white transition-transform duration-300 flex items-center justify-center border border-gray-200 dark:border-gray-700">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+                    <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+                        <div class="overflow-hidden">
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>Tidak, biaya paket yang tertera hanya untuk jasa setting, riset, dan optimasi iklan. Budget untuk saldo iklan dibayarkan langsung ke platform (Meta/TikTok/Google) oleh klien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full flex items-center justify-between gap-4 p-6 text-left focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Berapa budget iklan yang disarankan?</h3>
+                        <span class="faq-icon shrink-0 rounded-full bg-gray-50 dark:bg-gray-800 p-2 sm:p-3 text-gray-900 dark:text-white transition-transform duration-300 flex items-center justify-center border border-gray-200 dark:border-gray-700">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+                    <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+                        <div class="overflow-hidden">
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>Kami menyarankan budget minimal Rp50.000 hingga Rp300.000 per hari, tergantung dari jenis bisnis, target market, dan platform yang digunakan. Nanti akan kami pandu saat sesi konsultasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white dark:bg-darkCard rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full flex items-center justify-between gap-4 p-6 text-left focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Apakah jasa ini cocok untuk UMKM?</h3>
+                        <span class="faq-icon shrink-0 rounded-full bg-gray-50 dark:bg-gray-800 p-2 sm:p-3 text-gray-900 dark:text-white transition-transform duration-300 flex items-center justify-center border border-gray-200 dark:border-gray-700">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+                    <div class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+                        <div class="overflow-hidden">
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>Sangat cocok! Kelebihan iklan digital adalah fleksibilitas budget. Kami bisa menyesuaikan strategi iklan yang efektif meskipun dengan budget yang terbatas untuk UMKM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CTA PENUTUP & FOOTER -->
+    <section class="relative py-24 bg-animated-gradient overflow-hidden text-white text-center">
+        <!-- Background elements -->
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">🚀 Siap meningkatkan penjualan bisnis Anda?</h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                Konsultasi GRATIS sekarang dan kami bantu buatkan strategi iklan yang tepat untuk bisnis Anda. Jangan biarkan kompetitor mengambil pelanggan Anda!
+            </p>
+            
+            <a href="https://wa.me/6285380678844?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20jasa%20iklan%20digital." target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold rounded-full text-white bg-[#25D366] hover:bg-[#128C7E] hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(37,211,102,0.4)]">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Chat WhatsApp Sekarang
+            </a>
+            <p class="mt-4 text-sm text-blue-200">+62 853-8067-8844</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2023 Aden Digital Strategist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // --- Dark Mode Toggle Logic ---
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            lightIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+
+        // --- Navbar Scroll Effect ---
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // --- Scroll Reveal Animation ---
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+
+        // --- Mobile Menu Logic ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            const isClosed = mobileMenu.classList.contains('translate-x-full');
+            if (isClosed) {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+                document.body.classList.add('menu-open');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenu.classList.remove('translate-x-0');
+                document.body.classList.remove('menu-open');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenu.classList.remove('translate-x-0');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // --- FAQ Accordion Logic with Smooth Animation ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const btn = item.querySelector('.faq-btn');
+            const content = item.querySelector('.faq-content');
+            const icon = item.querySelector('.faq-icon');
+
+            btn.addEventListener('click', () => {
+                const isOpen = content.classList.contains('grid-rows-[1fr]');
+                
+                // Close all other FAQs
+                faqItems.forEach(otherItem => {
+                    const otherContent = otherItem.querySelector('.faq-content');
+                    const otherIcon = otherItem.querySelector('.faq-icon');
+                    
+                    otherContent.classList.remove('grid-rows-[1fr]');
+                    otherContent.classList.add('grid-rows-[0fr]');
+                    otherIcon.classList.remove('rotate-45');
+                    otherIcon.classList.replace('bg-primary', 'bg-gray-50');
+                    otherIcon.classList.replace('text-white', 'text-gray-900');
+                    
+                    // Dark mode resets
+                    if(document.documentElement.classList.contains('dark')) {
+                        otherIcon.classList.replace('dark:bg-primary', 'dark:bg-gray-800');
+                    }
+                });
+
+                // Toggle current FAQ
+                if (!isOpen) {
+                    content.classList.remove('grid-rows-[0fr]');
+                    content.classList.add('grid-rows-[1fr]');
+                    icon.classList.add('rotate-45');
+                    
+                    // Highlight icon
+                    icon.classList.replace('bg-gray-50', 'bg-primary');
+                    icon.classList.replace('text-gray-900', 'text-white');
+                    if(document.documentElement.classList.contains('dark')) {
+                        icon.classList.replace('dark:bg-gray-800', 'dark:bg-primary');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
